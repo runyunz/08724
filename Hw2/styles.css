@@ -1,0 +1,200 @@
+/* Runyun Zhang - runyunz@andrew.cmu.edu */
+/* 08724 - Hw2 */
+/* 2014.02.10  */
+
+
+* {
+	font-size: 14px;
+	font-family: Helvetica, Arial, sans-serif;
+	color: rgb(0,0,0);
+}
+
+body {
+	background-color: rgb(60,60,60);
+	font-size: 14px;
+}
+
+/* navigation */
+nav {
+	border-radius: 1em / 1em;	
+}
+
+nav li {
+	list-style-type: none;
+	margin: 10px;
+	padding: 5px;
+}
+
+nav a:link, a:visited {
+	color: rgb(153,153,153);
+	text-decoration: none;	
+}
+
+nav a:hover {
+	color: rgb(255,255,255);
+}
+
+nav ul {
+	padding-left: 2px;
+}
+
+/* main */
+main {
+	background-color: rgb(255,255,255);
+	border-radius: 1em / 1em;
+	min-width: 700px;
+	max-width: 1000px;
+	padding: 10px;
+}
+
+/* screen solution */
+@media screen and (max-width: 1024px) {
+	nav {
+		background: linear-gradient(180deg, rgb(34,34,34), rgb(60,60,60));
+		width: 100%;
+		padding: 5px;
+		min-width: 700px;
+		max-width: 1000px;
+	}
+
+	nav li {
+		display: inline; 
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	nav {
+		width: 240px;
+		background: linear-gradient(90deg, rgb(34,34,34), rgb(60,60,60));	
+		float: left;
+		display: inline-block;
+	}
+
+	main {
+		display: inline-block;
+		float: right;
+		width: calc(100% - 260px);
+	}
+
+	footer {
+		clear: both;
+	}
+}
+
+/* others */
+h1 {
+	font-size: 3rem;
+	text-shadow: 2px 2px 5px rgb(0,0,0);
+	margin: 15px;
+}
+
+h2 {
+	font-size: 2rem;
+	color: rgb(185,85,25);
+}
+
+section {
+	margin: 15px;
+}
+
+main a:link, main a:visited {
+	color: rgb(0,0,255);
+	text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+.reading-dog {
+	width: 260px; 
+	height: 150px; 
+	padding: 30px; 
+	margin: 20px;
+	background-image: url("reading_dog.jpg");
+	background-repeat: round;
+	border-radius: 1em / 1em;	
+}
+
+blockquote {
+	font-style:italic;
+	word-spacing: 1px;
+}
+
+table {
+	border: 1px solid rgb(0,0,0);
+	border-collapse: collapse;
+}
+
+thead {
+	background: linear-gradient(180deg, rgb(60,60,60), rgb(115,115,115));
+	text-align: left;
+}
+
+tr, td, th {
+	border: 1px solid rgb(0,0,0);
+	padding: 10px 5px;
+}
+
+thead th {
+	color: rgb(255,255,255);
+}
+
+tbody td:nth-of-type(1), tbody td:nth-of-type(2) {
+	width: 160px;
+	text-align: left;
+}
+
+tbody td:nth-of-type(3), tbody td:nth-of-type(4) {
+	width: 125px;
+	text-align: right;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: rgb(238,238,238);
+}
+
+tbody tr:nth-child(even) {
+	background-color: rgb(255,255,255);
+}
+
+section ul {
+	list-style-position: inside;
+	text-indent: 5px;
+}
+
+fieldset {
+	border: 1px solid rgb(153,153,153);
+	border-radius: 1em / 1em
+}
+
+fieldset:not(div) > input {
+	background-color: rgb(60,60,60);
+	color: rgb(255,255,255);
+	border-radius: 10px;
+	padding: 5px 10px;
+}
+
+form div {
+	padding: 3px;
+}
+
+.required {
+	color: rgb(255,0,0);
+}
+
+footer {
+	color: rgb(255,255,255);
+	text-align:center;
+	/*margin-top: 10px;*/
+	padding-top: 20px; 
+}
+
+#section-favoritegenres, #section-about {
+	width: 50%;
+}
+
+#section-quoteoftheday {
+	width: 60%;
+}
+
