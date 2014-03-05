@@ -1,0 +1,22 @@
+#title {
+	text-align: center;
+}
+
+#accordion {
+	display: inline-block;
+	float: left;
+	width: calc(50% - 20px);
+	margin: 10px;
+}
+
+#slide {
+	display: inline-block;
+	float: right;
+	width: calc(50% - 20px);
+	margin: 10px;
+}
+
+#img {
+	float: right;
+	width: 100%
+}
